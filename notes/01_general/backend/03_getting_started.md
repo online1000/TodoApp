@@ -24,4 +24,5 @@ https://github.com/online1000/TodoApp
 * create RestController  
    implemented methods:  
      * findAllTasks
-     * 
+     * addTask
+     * deleteTask
