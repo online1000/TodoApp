@@ -1,0 +1,120 @@
+2025-12-25T14:21:59.526+01:00  INFO 19664 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Starting TodoAppApplication using Java 21.0.8 with PID 19664 (D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo\target\classes started by m in D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo)
+2025-12-25T14:21:59.527+01:00  INFO 19664 --- [todo-app] [main] com.example.demo.TodoAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-25T14:21:59.946+01:00  INFO 19664 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25T14:21:59.961+01:00  INFO 19664 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-12-25T14:22:00.267+01:00  INFO 19664 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-25T14:22:00.277+01:00  INFO 19664 --- [todo-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-25T14:22:00.277+01:00  INFO 19664 --- [todo-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-25T14:22:00.330+01:00  INFO 19664 --- [todo-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-25T14:22:00.330+01:00  INFO 19664 --- [todo-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 771 ms
+2025-12-25T14:22:00.440+01:00  INFO 19664 --- [todo-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-25T14:22:00.475+01:00  INFO 19664 --- [todo-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-25T14:22:00.507+01:00  INFO 19664 --- [todo-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-25T14:22:00.698+01:00  INFO 19664 --- [todo-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25T14:22:00.719+01:00  INFO 19664 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-25T14:22:05.489+01:00  INFO 19664 --- [todo-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./testdb user=SA
+2025-12-25T14:22:05.490+01:00  INFO 19664 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-25T14:22:05.528+01:00  INFO 19664 --- [todo-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-25T14:22:05.758+01:00  INFO 19664 --- [todo-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-25T14:22:05.762+01:00  INFO 19664 --- [todo-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25T14:22:05.793+01:00  WARN 19664 --- [todo-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-25T14:22:06.010+01:00  INFO 19664 --- [todo-app] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./testdb'
+2025-12-25T14:22:06.059+01:00  INFO 19664 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-25T14:22:06.065+01:00  INFO 19664 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Started TodoAppApplication in 6.864 seconds (process running for 7.117)
+2025-12-25T14:22:29.316+01:00  INFO 13804 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Starting TodoAppApplication using Java 21.0.8 with PID 13804 (D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo\target\classes started by m in D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo)
+2025-12-25T14:22:29.317+01:00  INFO 13804 --- [todo-app] [main] com.example.demo.TodoAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-25T14:22:29.744+01:00  INFO 13804 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25T14:22:29.758+01:00  INFO 13804 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2025-12-25T14:22:30.077+01:00  INFO 13804 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-25T14:22:30.087+01:00  INFO 13804 --- [todo-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-25T14:22:30.087+01:00  INFO 13804 --- [todo-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-25T14:22:30.132+01:00  INFO 13804 --- [todo-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-25T14:22:30.133+01:00  INFO 13804 --- [todo-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 782 ms
+2025-12-25T14:22:30.242+01:00  INFO 13804 --- [todo-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-25T14:22:30.278+01:00  INFO 13804 --- [todo-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-25T14:22:30.305+01:00  INFO 13804 --- [todo-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-25T14:22:30.492+01:00  INFO 13804 --- [todo-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25T14:22:30.515+01:00  INFO 13804 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-25T14:22:39.293+01:00  INFO 13804 --- [todo-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./testdb user=SA
+2025-12-25T14:22:39.294+01:00  INFO 13804 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-25T14:22:39.334+01:00  INFO 13804 --- [todo-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-25T14:22:39.575+01:00  INFO 13804 --- [todo-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-25T14:22:39.579+01:00  INFO 13804 --- [todo-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25T14:22:39.612+01:00  WARN 13804 --- [todo-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-25T14:22:39.831+01:00  INFO 13804 --- [todo-app] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:./testdb'
+2025-12-25T14:22:39.880+01:00  INFO 13804 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-25T14:22:39.886+01:00  INFO 13804 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Started TodoAppApplication in 10.898 seconds (process running for 11.154)
+2025-12-25T16:06:48.603+01:00  INFO 21540 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Starting TodoAppApplication using Java 21.0.2 with PID 21540 (D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo\target\classes started by m in D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo)
+2025-12-25T16:06:48.606+01:00  INFO 21540 --- [todo-app] [main] com.example.demo.TodoAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-25T16:06:49.646+01:00  INFO 21540 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25T16:06:49.715+01:00  INFO 21540 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2025-12-25T16:06:50.080+01:00  INFO 21540 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-25T16:06:50.092+01:00  INFO 21540 --- [todo-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-25T16:06:50.093+01:00  INFO 21540 --- [todo-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-25T16:06:50.173+01:00  INFO 21540 --- [todo-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-25T16:06:50.173+01:00  INFO 21540 --- [todo-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1477 ms
+2025-12-25T16:06:50.300+01:00  INFO 21540 --- [todo-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-25T16:06:50.362+01:00  INFO 21540 --- [todo-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-25T16:06:50.391+01:00  INFO 21540 --- [todo-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-25T16:06:50.649+01:00  INFO 21540 --- [todo-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25T16:06:50.676+01:00  INFO 21540 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-25T16:06:55.485+01:00  INFO 21540 --- [todo-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/testdb user=SA
+2025-12-25T16:06:55.486+01:00  INFO 21540 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-25T16:06:55.536+01:00  INFO 21540 --- [todo-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-25T16:06:56.234+01:00  INFO 21540 --- [todo-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-25T16:06:56.275+01:00  INFO 21540 --- [todo-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25T16:06:56.434+01:00  WARN 21540 --- [todo-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-25T16:06:56.667+01:00  INFO 21540 --- [todo-app] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2025-12-25T16:06:56.736+01:00  INFO 21540 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-25T16:06:56.742+01:00  INFO 21540 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Started TodoAppApplication in 9.007 seconds (process running for 9.526)
+2025-12-25T16:08:25.253+01:00  INFO 2556 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Starting TodoAppApplication using Java 21.0.2 with PID 2556 (D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo\target\classes started by m in D:\_SEPM_Wdh\TodoApp\single_user_app\backend\demo)
+2025-12-25T16:08:25.254+01:00  INFO 2556 --- [todo-app] [main] com.example.demo.TodoAppApplication      : No active profile set, falling back to 1 default profile: "default"
+2025-12-25T16:08:25.713+01:00  INFO 2556 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-25T16:08:25.750+01:00  INFO 2556 --- [todo-app] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 1 JPA repository interface.
+2025-12-25T16:08:26.091+01:00  INFO 2556 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-25T16:08:26.103+01:00  INFO 2556 --- [todo-app] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-25T16:08:26.103+01:00  INFO 2556 --- [todo-app] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.50]
+2025-12-25T16:08:26.147+01:00  INFO 2556 --- [todo-app] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-25T16:08:26.148+01:00  INFO 2556 --- [todo-app] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 861 ms
+2025-12-25T16:08:26.259+01:00  INFO 2556 --- [todo-app] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-25T16:08:26.296+01:00  INFO 2556 --- [todo-app] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.39.Final
+2025-12-25T16:08:26.319+01:00  INFO 2556 --- [todo-app] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-25T16:08:26.518+01:00  INFO 2556 --- [todo-app] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-25T16:08:26.547+01:00  INFO 2556 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-25T16:08:35.365+01:00  INFO 2556 --- [todo-app] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:file:./data/testdb user=SA
+2025-12-25T16:08:35.368+01:00  INFO 2556 --- [todo-app] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-25T16:08:35.464+01:00  INFO 2556 --- [todo-app] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-25T16:08:36.197+01:00  INFO 2556 --- [todo-app] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-25T16:08:36.233+01:00  INFO 2556 --- [todo-app] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-25T16:08:36.386+01:00  WARN 2556 --- [todo-app] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-25T16:08:36.642+01:00  INFO 2556 --- [todo-app] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/testdb'
+2025-12-25T16:08:36.698+01:00  INFO 2556 --- [todo-app] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-25T16:08:36.704+01:00  INFO 2556 --- [todo-app] [main] com.example.demo.TodoAppApplication      : Started TodoAppApplication in 11.793 seconds (process running for 12.054)
