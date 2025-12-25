@@ -1,1 +1,14 @@
-<p>task works!</p>
+<div class="container">
+  <h2>Task Manager</h2>
+  <input [(ngModel)]="newTask" placeholder="New Task">
+  <button (click)="addTask()"> Add </button>
+
+  <ul>
+    @for (task of tasks; track task.id){
+      <li>
+        {{task.title}}
+        <button (click)="deleteTask(task.id!)">delete</button>
+      </li>
+    }
+  </ul>
+</div>
