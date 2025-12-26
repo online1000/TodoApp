@@ -1,13 +1,36 @@
-<div class="container">
+<div class="container mt-4">
   <h2>Task Manager</h2>
   <input [(ngModel)]="newTask" placeholder="New Task">
-  <button (click)="addTask()"> Add </button>
+  <button
+    class="btn btn-sm btn-success"
+    (click)="addTask()">
 
-  <ul>
+    Add
+  </button>
+
+  <ul class="list-group mt-3">
     @for (task of tasks; track task.id){
-      <li>
-        {{task.title}}
-        <button (click)="deleteTask(task.id!)">delete</button>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+
+        <!-- a checkbox and the task titel as a label.
+        The label is rapped around to input so I dont have to link the two html items with an id-->
+        <!--       [checked]="task.completed"        sets the checkbox according to the value of task.completed -->
+        <!--         (change)="toggleCompleted(task)"   send the update to the backend -->
+        <label class="d-flex align-items-center">
+          <input
+            type="checkbox"
+            class="form-check-input me-2"
+            [checked]="task.completed"
+            (change)="toggleCompleted(task)"
+          />
+          {{ task.title }}
+        </label>
+
+        <button
+          class="btn btn-sm btn-danger"
+          (click)="deleteTask(task.id!)">
+          delete
+        </button>
       </li>
     }
   </ul>

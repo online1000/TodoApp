@@ -24,6 +24,8 @@ export class TaskComponent implements OnInit{
   }
 
   public loadTasks() {
+
+    // this.taskService.getTasks_mock().subscribe(
     this.taskService.getTasks().subscribe(
       {
         next: data => {
@@ -47,7 +49,8 @@ export class TaskComponent implements OnInit{
 
     // create a task object
     const task: Task = {
-      title: this.newTask
+      title: this.newTask,
+      completed: false
     }
 
     // handle return values, reset newTasks string and reload tasklist
@@ -72,6 +75,24 @@ export class TaskComponent implements OnInit{
         },
         error: data => {
           console.log("Error when deleting task")
+        }
+      }
+    );
+  }
+
+  public toggleCompleted(task: Task) {
+    const updatedTask: Task = {     // const is like finally in Java
+      ...task,                      // take all value from task
+      completed: !task.completed    // but modify the completed field
+    };
+
+    this.taskService.updateTask(updatedTask).subscribe(
+      {
+        next: data => {
+          this.loadTasks();
+        },
+        error: data => {
+          console.log("Error when updating task")
         }
       }
     );

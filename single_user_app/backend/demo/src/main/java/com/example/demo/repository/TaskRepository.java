@@ -11,5 +11,5 @@ update Task
 
 we get all this basic crud functionality from the repository without having to implement it
  */
-public interface TaskRepository extends JpaRepository<Task, Integer> {
+public interface TaskRepository extends JpaRepository<Task, Long> {
 }

@@ -56,3 +56,27 @@ export class AppComponent {
 }
 ```
 
+### css styling using bootstrap
+**task.component.html**
+```html
+<div class="container mt-4">
+    <h2>Task Manager</h2>
+    <input [(ngModel)]="newTask" placeholder="New Task">
+    <button (click)="addTask()"> Add </button>
+
+    <ul class="list-group mt-3">
+        @for (task of tasks; track task.id){
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <input id="task-{{ task.id }}" type="checkbox" [value]="task.completed" class="form-check-input me-2"/>
+            <label for="todo-{{ task.id }}"> {{ task.title }} </label>
+            <!--        {{task.title}}-->
+            <button
+                    class="btn btn-sm btn-danger"
+                    (click)="deleteTask(task.id!)">
+                delete
+            </button>
+        </li>
+        }
+    </ul>
+</div>
+```
