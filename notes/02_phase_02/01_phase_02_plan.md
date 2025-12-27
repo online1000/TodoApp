@@ -1,8 +1,10 @@
 **BigPicture**
-1. **Service layer + DTOs**
+* [x] **Service layer + DTOs**
    (pure refactor, no behavior change)
+
 2. **Edit task flow (component + routing)**
    (forces DTO + service usage)
+
 3. **Navbar + routing structure**
 4. **Users + ownership**
 5. **Search**

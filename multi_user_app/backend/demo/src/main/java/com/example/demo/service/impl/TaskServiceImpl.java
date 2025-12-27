@@ -14,15 +14,19 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
+// @RequiredArgsConstructor  // this only works if the things to inject are final!!!
 public class TaskServiceImpl implements TaskService {
 
-    private TaskRepository taskRepository;
-    private TaskMapper taskMapper;
+    private final TaskRepository taskRepository;
+    private final TaskMapper taskMapper;
+
+    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper) {
+        this.taskRepository = taskRepository;
+        this.taskMapper = taskMapper;
+    }
 
     @Override
     public List<TaskDto> findAll() {
