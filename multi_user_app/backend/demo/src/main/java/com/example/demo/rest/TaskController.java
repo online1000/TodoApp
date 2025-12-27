@@ -1,7 +1,10 @@
 package com.example.demo.rest;
 
+import com.example.demo.dto.TaskDto;
 import com.example.demo.entity.Task;
 import com.example.demo.repository.TaskRepository;
+import com.example.demo.service.TaskService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -16,23 +19,23 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:4200")
 @Slf4j
 public class TaskController {
-    private final TaskRepository taskRepository;
+    private final TaskService taskService;
 
     @GetMapping
-    public List<Task> findAll() {
-        return taskRepository.findAll();
+    public List<TaskDto> findAll() {
+        return taskService.findAll();
     }
 
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping
-    public Task addTask(@RequestBody Task task) {
-        return taskRepository.save(task);
+    public TaskDto addTask(@RequestBody @Valid TaskDto taskDto) {
+        return taskService.addTask(taskDto);
     }
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteTaskById(@PathVariable Long id) {
-        taskRepository.deleteById(id);
+        taskService.deleteTaskById(id);
     }
 
     /*
@@ -40,19 +43,13 @@ public class TaskController {
         returns a body
         does NOT throw an exception
         does NOT specify @ResponseStatus
-        --> Spring automatically returns:
+        --> Spring automatically returns: 200 OK
      */
     @PutMapping("/{id}")
-    public Task updateTask(
+    public TaskDto updateTask(
             @PathVariable Long id,
-            @RequestBody Task updatedTask) {
+            @RequestBody TaskDto updatedTask) {
 
-        Task task = taskRepository.findById(id)  // orElseThrow expects a function that returns an exception
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-
-        task.setTitle(updatedTask.getTitle());
-        task.setCompleted(updatedTask.getCompleted());
-
-        return taskRepository.save(task);
+        return  taskService.updateTask(updatedTask);
     }
 }

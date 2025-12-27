@@ -3,7 +3,7 @@ package com.example.demo.dto;
 import jakarta.validation.constraints.NotBlank;
 
 public record TaskDto(
-long id,
+Long id,
 
 @NotBlank
 String title,
