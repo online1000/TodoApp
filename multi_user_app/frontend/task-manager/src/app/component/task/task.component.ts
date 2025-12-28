@@ -3,11 +3,13 @@ import {CommonModule} from "@angular/common";  // for ngIf, pipes and things lik
 import {FormsModule} from "@angular/forms";   // for two-way databinding
 import {TaskService} from "../../services/task.service";
 import {Task} from "../../model/Task";
+import {EditTaskComponent} from "../edit-task/edit-task.component";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-task',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, RouterLink],
   templateUrl: './task.component.html',
   styleUrl: './task.component.scss'
 })
@@ -29,7 +31,7 @@ export class TaskComponent implements OnInit{
     this.taskService.getTasks().subscribe(
       {
         next: data => {
-          console.log("retrieved " + data.length + "tasks")
+          console.log("retrieved " + data.length + " tasks")
           this.tasks = data;
         },
 

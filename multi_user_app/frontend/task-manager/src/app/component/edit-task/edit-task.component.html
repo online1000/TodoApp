@@ -1,0 +1,70 @@
+<div class="container mt-4">
+
+  <h3 class="mb-3 fw-bold">Edit Task</h3>
+
+  <form
+    [formGroup]="editTaskForm"
+    (ngSubmit)="handleSubmit()"
+    class="card p-4 mt-3"
+    style="max-width: 400px"
+  >
+    <!-- Titel inputfield-->
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="title"
+        placeholder="Enter task title"
+      />
+    </div>
+
+    <!-- status selector -->
+    <div class="mb-3">
+      <label class="form-label">Status</label>
+      <select
+        class="form-select"
+        formControlName="completed"
+      >
+        <option [ngValue]="false">Open</option>
+        <option [ngValue]="true">Completed</option>
+      </select>
+    </div>
+
+    <!-- submit button -->
+    <div class="d-flex justify-content-end">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="editTaskForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+
+  </form>
+</div>
+
+<!-- without styling-->
+<!--  <div>-->
+<!--    <label>-->
+<!--      Titel-->
+<!--      <input type = "text" formControlName="title"/>-->
+<!--    </label>-->
+<!--  </div>-->
+
+<!--  <div>-->
+<!--    <label>-->
+<!--      Status-->
+<!--      <select formControlName="completed">-->
+<!--        <option [ngValue]="false"> open</option>-->
+<!--        <option [ngValue]="true"> completed</option>-->
+<!--      </select>-->
+<!--    </label>-->
+<!--  </div>-->
+
+<!--  <button type="submit" [disabled]="editTaskForm.invalid">-->
+<!--    Submit-->
+<!--  </button>-->
+
+<!--</form>-->

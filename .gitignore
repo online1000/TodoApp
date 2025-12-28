@@ -55,6 +55,9 @@ buildNumber.properties
 
 ### Log-Files ###
 log/
+*.gz
+*.log
+*.db
 
 ### Database-Files ###
 /database/
