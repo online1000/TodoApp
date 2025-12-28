@@ -35,6 +35,13 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
+    public TaskDto findTaskById(Long id) {
+        Task retrievedTask = taskRepository.findById(id)
+                .orElseThrow(() -> new NotFoundException("Task to retrieve not found"));
+        return taskMapper.toDto(retrievedTask);
+    }
+
+    @Override
     public TaskDto addTask(TaskDto task) {
         Task savedTask = taskRepository.save(taskMapper.toEntity(task));
         return taskMapper.toDto(savedTask);

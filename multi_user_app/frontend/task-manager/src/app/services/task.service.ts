@@ -26,6 +26,10 @@ export class TaskService {
     return of(mockTasks);
   }
 
+  findTaskById(id: number): Observable<Task> {
+    const url = `${this.apiUrl}/${id}`;
+    return this.http.get<Task>(url);
+  }
 
   addTask(task: Task): Observable<Task> {
     return this.http.post<Task>(this.apiUrl, task);

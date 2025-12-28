@@ -1,21 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {CommonModule} from "@angular/common";  // for ngIf, pipes and things like that
 import {FormsModule} from "@angular/forms";   // for two-way databinding
 import {TaskService} from "../../services/task.service";
 import {Task} from "../../model/Task";
-import {EditTaskComponent} from "../edit-task/edit-task.component";
-import {RouterLink} from "@angular/router";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-task',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink],
+  imports: [CommonModule, FormsModule],
   templateUrl: './task.component.html',
   styleUrl: './task.component.scss'
 })
 export class TaskComponent implements OnInit{
   tasks: Task[] = [];         // a list of tasks, in initialized as empty list
   newTask: string = "";       // string variable to create a new task
+
+  private router = inject(Router);
 
   constructor(private taskService: TaskService) {   // inject the task service for API calls
 
@@ -98,5 +99,9 @@ export class TaskComponent implements OnInit{
         }
       }
     );
+  }
+
+  editTask(taskId: number) {
+    this.router.navigate(['/tasks/edit', taskId])
   }
 }

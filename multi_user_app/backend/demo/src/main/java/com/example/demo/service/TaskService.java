@@ -12,6 +12,11 @@ public interface TaskService {
     List<TaskDto> findAll();
 
     /*
+    retrieves a stored task by the id
+     */
+    TaskDto findTaskById(Long id);
+
+    /*
        Saves a new task in persistent data storage
     */
     TaskDto addTask(TaskDto task);
