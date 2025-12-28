@@ -1,8 +1,8 @@
-<div class="container mt-4">
+<div class="container mt-4" style="max-width: 720px;">
   <h2>Task Manager</h2>
   <input [(ngModel)]="newTask" placeholder="New Task">
   <button
-    class="btn btn-sm btn-success"
+    class="btn btn-sm btn-primary"
     (click)="addTask()">
 
     Add
@@ -26,11 +26,22 @@
           {{ task.title }}
         </label>
 
-        <button
-          class="btn btn-sm btn-danger"
-          (click)="deleteTask(task.id!)">
-          delete
-        </button>
+        <!-- edit button -->
+        <div class="d-flex gap-2">
+          <button
+            class="btn btn-sm btn-success"
+            (click)="deleteTask(task.id!)">
+            edit
+          </button>
+
+          <!-- delete button -->
+          <button
+            class="btn btn-sm btn-danger"
+            (click)="deleteTask(task.id!)">
+            delete
+          </button>
+        </div>
+
       </li>
     }
   </ul>
